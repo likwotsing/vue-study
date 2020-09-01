@@ -6,6 +6,7 @@ import TemplateSyntax from '@/components/TemplateSyntax.vue'
 import Compute from '@/components/Compute.vue'
 import Style from '@/components/Style.vue'
 import ConditionRender from '@/components/ConditionRender.vue'
+import ListRender from '@/components/ListRender.vue'
 
 Vue.use(VueRouter)
 
@@ -47,6 +48,11 @@ const routes = [
     path: '/condition-render',
     name: 'ConditionRender',
     component: ConditionRender
+  },
+  {
+    path: '/list-render',
+    name: 'ListRender',
+    component: ListRender
   }
 ]
 

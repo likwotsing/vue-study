@@ -8,6 +8,7 @@
       <router-link to="/compute">计算属性和侦听器</router-link>
       <router-link to="/style">样式</router-link>
       <router-link to="/condition-render">条件渲染</router-link>
+      <router-link to="/list-render">列表渲染</router-link>
     </div>
     <router-view/>
   </div>
