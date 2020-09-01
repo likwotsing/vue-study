@@ -9,6 +9,7 @@
       <router-link to="/style">样式</router-link>
       <router-link to="/condition-render">条件渲染</router-link>
       <router-link to="/list-render">列表渲染</router-link>
+      <router-link to="/event-handle">事件处理</router-link>
     </div>
     <router-view/>
   </div>

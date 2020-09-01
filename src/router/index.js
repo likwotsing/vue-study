@@ -7,6 +7,7 @@ import Compute from '@/components/Compute.vue'
 import Style from '@/components/Style.vue'
 import ConditionRender from '@/components/ConditionRender.vue'
 import ListRender from '@/components/ListRender.vue'
+import EventHandle from '@/components/EventHandle.vue'
 
 Vue.use(VueRouter)
 
@@ -53,6 +54,11 @@ const routes = [
     path: '/list-render',
     name: 'ListRender',
     component: ListRender
+  },
+  {
+    path: '/event-handle',
+    name: 'EventHandle',
+    component: EventHandle
   }
 ]
 
