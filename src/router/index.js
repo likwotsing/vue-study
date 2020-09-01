@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Introduce from '@/components/Introduce.vue'
 import TemplateSyntax from '@/components/TemplateSyntax.vue'
+import Compute from '@/components/Compute.vue'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ const routes = [
     path: '/template-syntax',
     name: 'TemplateSyntax',
     component: TemplateSyntax
+  },
+  {
+    path: '/compute',
+    name: 'Compute',
+    component: Compute
   }
 ]
 
