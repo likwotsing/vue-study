@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Introduce from '@/components/Introduce.vue'
 import TemplateSyntax from '@/components/TemplateSyntax.vue'
 import Compute from '@/components/Compute.vue'
+import Style from '@/components/Style.vue'
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,11 @@ const routes = [
     path: '/compute',
     name: 'Compute',
     component: Compute
+  },
+  {
+    path: '/style',
+    name: 'Style',
+    component: Style
   }
 ]
 

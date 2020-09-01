@@ -6,6 +6,7 @@
       <router-link to="/introduce">介绍</router-link>
       <router-link to="/template-syntax">模板语法</router-link>
       <router-link to="/compute">计算属性和侦听器</router-link>
+      <router-link to="/style">样式</router-link>
     </div>
     <router-view/>
   </div>
