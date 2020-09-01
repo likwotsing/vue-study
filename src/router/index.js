@@ -8,6 +8,7 @@ import Style from '@/components/Style.vue'
 import ConditionRender from '@/components/ConditionRender.vue'
 import ListRender from '@/components/ListRender.vue'
 import EventHandle from '@/components/EventHandle.vue'
+import FormInput from '@/components/FormInput.vue'
 
 Vue.use(VueRouter)
 
@@ -59,6 +60,11 @@ const routes = [
     path: '/event-handle',
     name: 'EventHandle',
     component: EventHandle
+  },
+  {
+    path: '/form-input',
+    name: 'FormInput',
+    component: FormInput
   }
 ]
 

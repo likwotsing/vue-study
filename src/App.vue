@@ -10,6 +10,7 @@
       <router-link to="/condition-render">条件渲染</router-link>
       <router-link to="/list-render">列表渲染</router-link>
       <router-link to="/event-handle">事件处理</router-link>
+      <router-link to="/form-input">表单输入绑定</router-link>
     </div>
     <router-view/>
   </div>
