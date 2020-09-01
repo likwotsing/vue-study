@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Introduce from '@/components/Introduce.vue'
+import TemplateSyntax from '@/components/TemplateSyntax.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ const routes = [
     path: '/introduce',
     name: 'Introduce',
     component: Introduce
+  },
+  {
+    path: '/template-syntax',
+    name: 'TemplateSyntax',
+    component: TemplateSyntax
   }
 ]
 
