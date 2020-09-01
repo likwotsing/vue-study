@@ -91,6 +91,21 @@
       true-value="yes"
       false-value="no"
     >
+    <!-- 单选 -->
+    <pre>单选按钮：选中的时候，pick的值是变量radioValue的值</pre>
+    <input type="radio" v-model="pick" v-bind:value="radioValue">
+    <!-- 选择框 -->
+    <pre>选择框</pre>
+    <select v-model="selected">
+      <option v-bind:value="optionObject">123</option>
+    </select>
+    <h3>修饰符</h3>
+    <pre>
+      .lazy：v-model在每次input事件触发后将输入框的值与数据进行同步。可以使用.lazy修饰符，变为在change事件之后同步。
+      .number：将用户输入的值转为数值类型，v-model.number='age'
+      .trim：过滤用户输入的首尾空白字符, v-model.trim='msg'
+    </pre>
+    <input v-model.number="age">
   </div>
 </template>
 
@@ -119,7 +134,14 @@ export default {
         <select v-model="selected">
           <option value="abc>ABC</option>
         </select>
-      `
+      `,
+      toggle: '',
+      pick: '',
+      radioValue: 'aaa',
+      optionObject: {
+        name: 'andy'
+      },
+      age: ''
     }
   },
   methods: {
