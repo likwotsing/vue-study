@@ -10,6 +10,7 @@ import ListRender from '@/components/ListRender.vue'
 import EventHandle from '@/components/EventHandle.vue'
 import FormInput from '@/components/FormInput.vue'
 import ComponentBasic from '@/components/ComponentBasic.vue'
+import DeepComponent from '@/components/DeepComponent.vue'
 
 Vue.use(VueRouter)
 
@@ -71,6 +72,11 @@ const routes = [
     path: '/component-basic',
     name: 'ComponentBasic',
     component: ComponentBasic
+  },
+  {
+    path: '/deep-component',
+    name: 'DeepComponent',
+    component: DeepComponent
   }
 ]
 
