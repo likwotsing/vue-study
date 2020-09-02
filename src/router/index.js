@@ -13,6 +13,7 @@ import ComponentBasic from '@/components/ComponentBasic.vue'
 import DeepComponent from '@/components/DeepComponent.vue'
 import Prop from '@/components/Prop.vue'
 import CustomEvent from '@/components/CustomEvent.vue'
+import Slot from '@/components/Slot.vue'
 
 Vue.use(VueRouter)
 
@@ -89,6 +90,11 @@ const routes = [
     path: '/custom-event',
     name: 'CustomEvent',
     component: CustomEvent
+  },
+  {
+    path: '/slot',
+    name: 'Slot',
+    component: Slot
   }
 ]
 

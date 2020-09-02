@@ -15,6 +15,7 @@
       <router-link to="/deep-component">深入了解组件</router-link>
       <router-link to="/prop">Prop</router-link>
       <router-link to="/custom-event">自定义事件</router-link>
+      <router-link to="/slot">slot插槽</router-link>
     </div>
     <router-view/>
   </div>
