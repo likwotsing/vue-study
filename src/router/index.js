@@ -11,6 +11,7 @@ import EventHandle from '@/components/EventHandle.vue'
 import FormInput from '@/components/FormInput.vue'
 import ComponentBasic from '@/components/ComponentBasic.vue'
 import DeepComponent from '@/components/DeepComponent.vue'
+import Prop from '@/components/Prop.vue'
 
 Vue.use(VueRouter)
 
@@ -77,6 +78,11 @@ const routes = [
     path: '/deep-component',
     name: 'DeepComponent',
     component: DeepComponent
+  },
+  {
+    path: '/prop',
+    name: 'Prop',
+    component: Prop
   }
 ]
 
