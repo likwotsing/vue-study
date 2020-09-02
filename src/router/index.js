@@ -9,6 +9,7 @@ import ConditionRender from '@/components/ConditionRender.vue'
 import ListRender from '@/components/ListRender.vue'
 import EventHandle from '@/components/EventHandle.vue'
 import FormInput from '@/components/FormInput.vue'
+import ComponentBasic from '@/components/ComponentBasic.vue'
 
 Vue.use(VueRouter)
 
@@ -65,6 +66,11 @@ const routes = [
     path: '/form-input',
     name: 'FormInput',
     component: FormInput
+  },
+  {
+    path: '/component-basic',
+    name: 'ComponentBasic',
+    component: ComponentBasic
   }
 ]
 
