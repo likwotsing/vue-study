@@ -12,6 +12,7 @@ import FormInput from '@/components/FormInput.vue'
 import ComponentBasic from '@/components/ComponentBasic.vue'
 import DeepComponent from '@/components/DeepComponent.vue'
 import Prop from '@/components/Prop.vue'
+import CustomEvent from '@/components/CustomEvent.vue'
 
 Vue.use(VueRouter)
 
@@ -83,6 +84,11 @@ const routes = [
     path: '/prop',
     name: 'Prop',
     component: Prop
+  },
+  {
+    path: '/custom-event',
+    name: 'CustomEvent',
+    component: CustomEvent
   }
 ]
 
