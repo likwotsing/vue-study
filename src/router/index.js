@@ -16,6 +16,7 @@ import CustomEvent from '@/components/CustomEvent.vue'
 import Slot from '@/components/Slot.vue'
 import ErrorComponent from '@/components/ErrorComponent.vue'
 import DealBoundary from '@/components/DealBoundary.vue'
+import TransitionList from '@/components/TransitionList.vue'
 
 Vue.use(VueRouter)
 
@@ -114,6 +115,11 @@ const routes = [
     path: '/deal-boundary',
     name: 'DealBoundary',
     component: DealBoundary
+  },
+  {
+    path: '/transition-list',
+    name: 'TransitionList',
+    component: TransitionList
   }
 ]
 
