@@ -33,5 +33,8 @@ requireComponent.keys().forEach(fileName => {
 window.vm = new Vue({
   router,
   store,
+  data: {
+    foo: 'main.js里的foo'
+  },
   render: h => h(App)
 }).$mount('#app')

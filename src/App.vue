@@ -16,11 +16,34 @@
       <router-link to="/prop">Prop</router-link>
       <router-link to="/custom-event">自定义事件</router-link>
       <router-link to="/slot">slot插槽</router-link>
+      <router-link to="/async-component">异步组件</router-link>
+      <router-link to="/deal-boundary">处理边界情况</router-link>
     </div>
     <router-view/>
   </div>
 </template>
 
+<script>
+export default {
+  provide: function() {
+    return {
+      getMap: this.getMap,
+      map: this.map
+    }
+  },
+  data() {
+    return {
+      foo: 'App.vue里的foo',
+      map: 'App.vue里的 map'
+    }
+  },
+  methods: {
+    getMap() {
+      console.log('方法：App.vue里的 getMap 方法')
+    }
+  }
+}
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

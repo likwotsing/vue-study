@@ -14,6 +14,8 @@ import DeepComponent from '@/components/DeepComponent.vue'
 import Prop from '@/components/Prop.vue'
 import CustomEvent from '@/components/CustomEvent.vue'
 import Slot from '@/components/Slot.vue'
+import ErrorComponent from '@/components/ErrorComponent.vue'
+import DealBoundary from '@/components/DealBoundary.vue'
 
 Vue.use(VueRouter)
 
@@ -95,6 +97,23 @@ const routes = [
     path: '/slot',
     name: 'Slot',
     component: Slot
+  },
+  {
+    path: '/async-component',
+    name: 'AsyncComponent',
+    component: () => {
+      return {
+        component: import('@/components/AsyncComponent.vue'),
+        error: ErrorComponent,
+        delay: 200,
+        timeout: 100
+      }
+    }
+  },
+  {
+    path: '/deal-boundary',
+    name: 'DealBoundary',
+    component: DealBoundary
   }
 ]
 
