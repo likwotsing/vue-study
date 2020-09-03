@@ -19,6 +19,7 @@
       <router-link to="/async-component">异步组件</router-link>
       <router-link to="/deal-boundary">处理边界情况</router-link>
       <router-link to="/transition-list">进入/离开&列表过渡</router-link>
+      <router-link to="/transition-state">状态过渡</router-link>
     </div>
     <router-view/>
   </div>
