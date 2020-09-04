@@ -20,6 +20,7 @@ import TransitionList from '@/components/TransitionList.vue'
 import TransitionState from '@/components/TransitionState.vue'
 import Mixin from '@/components/Mixin.vue'
 import CustomDirective from '@/components/CustomDirective.vue'
+import RenderFunction from '@/components/RenderFunction.vue'
 
 Vue.use(VueRouter)
 
@@ -138,6 +139,11 @@ const routes = [
     path: '/custom-directive',
     name: 'CustomDirective',
     component: CustomDirective
+  },
+  {
+    path: '/render-function',
+    name: 'RenderFunction',
+    component: RenderFunction
   }
 ]
 

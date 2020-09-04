@@ -22,6 +22,7 @@
       <router-link to="/transition-state">状态过渡</router-link>
       <router-link to="/mixin">混入</router-link>
       <router-link to="/custom-directive">自定义指令</router-link>
+      <router-link to="/render-function">渲染函数&JSX</router-link>
     </div>
     <router-view/>
   </div>
