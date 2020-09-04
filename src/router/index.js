@@ -19,6 +19,7 @@ import DealBoundary from '@/components/DealBoundary.vue'
 import TransitionList from '@/components/TransitionList.vue'
 import TransitionState from '@/components/TransitionState.vue'
 import Mixin from '@/components/Mixin.vue'
+import CustomDirective from '@/components/CustomDirective.vue'
 
 Vue.use(VueRouter)
 
@@ -132,6 +133,11 @@ const routes = [
     path: '/mixin',
     name: 'Mixin',
     component: Mixin
+  },
+  {
+    path: '/custom-directive',
+    name: 'CustomDirective',
+    component: CustomDirective
   }
 ]
 

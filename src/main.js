@@ -4,6 +4,8 @@ import router from './router'
 import store from './store'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
+// 自定义指令
+import '@/directives/index.js'
 
 Vue.config.productionTip = false
 
