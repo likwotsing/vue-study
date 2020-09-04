@@ -18,6 +18,7 @@ import ErrorComponent from '@/components/ErrorComponent.vue'
 import DealBoundary from '@/components/DealBoundary.vue'
 import TransitionList from '@/components/TransitionList.vue'
 import TransitionState from '@/components/TransitionState.vue'
+import Mixin from '@/components/Mixin.vue'
 
 Vue.use(VueRouter)
 
@@ -126,6 +127,11 @@ const routes = [
     path: '/transition-state',
     name: 'TransitionState',
     component: TransitionState
+  },
+  {
+    path: '/mixin',
+    name: 'Mixin',
+    component: Mixin
   }
 ]
 
