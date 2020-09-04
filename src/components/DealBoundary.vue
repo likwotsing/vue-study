@@ -113,7 +113,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .wrap {
   padding-bottom: 500px;
 }
