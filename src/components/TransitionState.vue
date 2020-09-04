@@ -16,6 +16,7 @@
     </div>
     <pre>
       对于不能存储数值时，如css中的color值，可以通过使用tween.js和color-js来实现
+      注意color-js的引入和使用，官方已不再维护。
     </pre>
     <div>
       <input v-model="colorQuery" @keyup.enter="updateColor" placeholder="请输入颜色">
@@ -24,6 +25,21 @@
       <span :style="{ backgroundColor: tweenedCSSColor }" class="color-span"></span>
       <p>{{ tweenedCSSColor }}</p>
     </div>
+    <h3>把过渡放到组件里</h3>
+    <pre>
+      注意AnimatedInteger组件里的tweenjs的版本及不同的使用方法。
+      Vue官网的版本：16.3.4，目前最新版本是18.6.0，使用方法不太一样。
+    </pre>
+    <div>
+      <input v-model.number="firstNumber" type="number" step="20"> +
+      <input v-model.number="secondNumber" type="number" step="20"> =
+      {{ result }}
+      <p>
+        <animated-integer :value="firstNumber"></animated-integer> +
+        <animated-integer :value="secondNumber"></animated-integer> =
+        <animated-integer :value="result"></animated-integer>
+      </p>
+    </div>
   </div>
 </template>
 
@@ -31,8 +47,12 @@
 import gsap from 'gsap'
 import TWEEN from '@tweenjs/tween.js'
 import Color from 'color'
+import AnimatedInteger from '@/components/AnimatedInteger.vue'
 
 export default {
+  components: {
+    AnimatedInteger
+  },
   data() {
     return {
       number: 0,
@@ -44,11 +64,12 @@ export default {
         blue: 0,
         alpha: 1
       },
-      tweenedColor: {}
+      tweenedColor: {},
+      firstNumber: 20,
+      secondNumber: 40
     }
   },
   created() {
-    console.log(new Color('#213131').green())
     this.tweenedColor = Object.assign({}, this.color)
   },
   computed: {
@@ -63,6 +84,9 @@ export default {
       //   alpha: this.tweenedColor.alpha
       // }).toCSS()
       return new Color([this.tweenedColor.red, this.tweenedColor.green, this.tweenedColor.blue, this.tweenedColor.alpha]).hex()
+    },
+    result() {
+      return this.firstNumber + this.secondNumber
     }
   },
   watch: {
